@@ -1,0 +1,9 @@
+<h2>Upcoming Bank Holidays</h2>
+<ul class="list-group list-group-flush">
+<button type="button" class="list-group-item list-group-item-action d-flex justify-content-between align-items-start" *ngFor = "let event of events" (click) = onSelect(event) routerLink = "/detail/{{event.date}}">
+<div class="ms-2 me-auto" >
+  <div class="fw-bold">{{event.title}}</div>
+  {{event.date}}
+</div>
+</button>
+</ul>
